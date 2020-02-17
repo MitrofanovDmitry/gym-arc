@@ -39,8 +39,8 @@ class GridEnvironment(gym.Env):
             self.grid.set(int(act[1]), int(act[2]), int(act[3]))
         elif act[0] == 'FILL':
             self.grid.flood_grid(int(act[1]), int(act[2]), int(act[3]))
-        elif act[0] == 'SELECT_FILL':
-            self.grid.set(int(act[1]), int(act[2]), int(act[3]))
+        # elif act[0] == 'SELECT_FILL':
+        #     self.grid.set(int(act[1]), int(act[2]), int(act[3]))
         elif act[0] == 'RESIZE':
             self.grid.resize_grid(int(act[1]), int(act[2]))
         elif act[0] == 'RESET':
